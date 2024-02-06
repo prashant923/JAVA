@@ -20,6 +20,9 @@ public class Main {
     list.insertfirst(3);
     list.insertfirst(2);
    list.insertlasT(45);
+   list.insertAfter(5, 344);
+   list.insert(60000,2);
+   list.insertbefore(344, 789);
 
     list.display();
 
