@@ -1,5 +1,6 @@
 public class DLL {
     private Node head;
+    private Node tail;
     public void insertfirst(int value){
       Node node = new Node(value);
       node.next =head;
@@ -12,14 +13,36 @@ public class DLL {
     }
     public void display(){
       Node node = head;
+      Node last = null;
       while (node!=null) {
         System.out.print(node.value+" -> ");
+        last = node;
         node= node.next;
       }
       System.out.println("END");
+      System.out.println();
+      System.out.println("printing in reverse");
+
+      while ( last != null){
+        System.out.print(last.value+" -> ");
+        last= last.prev;
+      }
+       System.out.println("Start");
+      
   
     }
-  
+  public void insertlasT(int value){
+    if(tail==null){
+      insertfirst(value);
+      return;
+    }
+    Node node = new Node(value);
+    tail.next = node;
+    node.next = null;
+    tail = node;
+    
+
+  }
     private class Node{
       int value;
       Node next;

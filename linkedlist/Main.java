@@ -13,14 +13,13 @@ public class Main {
    
         // list.display();
         DLL list = new DLL();
-        
     list.insertfirst(12);
     list.insertfirst(03);
     list.insertfirst(05);
     list.insertfirst(03);
     list.insertfirst(3);
     list.insertfirst(2);
-   
+   list.insertlasT(45);
 
     list.display();
 
