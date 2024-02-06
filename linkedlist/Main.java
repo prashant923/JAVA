@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+//************************************LINKED LIST SINGLY*********************************** */ 
         // ll list = new ll();
         // list.insertFirst(3);
         // list.insertFirst(2);
@@ -10,24 +11,33 @@ public class Main {
         // list.display();
         // System.out.println(list.deletelast());
         // list.deletelast();
-   
         // list.display();
-        DLL list = new DLL();
-    list.insertfirst(12);
-    list.insertfirst(03);
-    list.insertfirst(05);
-    list.insertfirst(03);
-    list.insertfirst(3);
+
+        // ****************************DOUBLY LINKED LIST*******************************************
+//         DLL list = new DLL();
+//     list.insertfirst(12);
+//     list.insertfirst(03);
+//     list.insertfirst(05);
+//     list.insertfirst(03);
+//     list.insertfirst(3);
+//     list.insertfirst(2);
+//    list.insertlasT(45);
+//    list.insertAfter(5, 344);
+//    list.insert(60000,2);
+//    list.insertbefore(344, 789);
+
+//    list.deletefirst();
+//    list.deletelast();
+
+//     list.display();
+
+// circular linked list)))))))))))))))))))))))))))))))))))))))/
+
+    CLL list = new CLL();
     list.insertfirst(2);
-   list.insertlasT(45);
-   list.insertAfter(5, 344);
-   list.insert(60000,2);
-   list.insertbefore(344, 789);
-
-   list.deletefirst();
-   list.deletelast();
-
+    list.insertlast(30);
     list.display();
+
 
     }
 }
