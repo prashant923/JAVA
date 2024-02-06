@@ -20,14 +20,14 @@ public class DLL {
         node= node.next;
       }
       System.out.println("END");
-      System.out.println();
-      System.out.println("printing in reverse");
+      // System.out.println();
+      // System.out.println("printing in reverse");
 
-      while ( last != null){
-        System.out.print(last.value+" -> ");
-        last= last.prev;
-      }
-       System.out.println("Start");
+      // while ( last != null){
+      //   System.out.print(last.value+" -> ");
+      //   last= last.prev;
+      // }
+      //  System.out.println("Start");
       
   
     }
@@ -69,6 +69,30 @@ public class DLL {
     node.next = p;
     
     p.prev= node;
+  }
+  public void deletefirst(){
+    if(head == null){
+      return;
+    }
+     if(head.next==null){
+      head.next.prev = null;
+     }
+    head = head.next;
+
+  }
+  public void deletelast(){
+    if(head==null){
+      return;
+    }
+    if(head.next==null){
+      deletefirst();
+    }
+    Node last= head;
+    while(last.next != null){
+      last= last.next;
+    }
+    last.prev.next = null;
+    last = last.prev;
   }
     public void insertAfter(int after, int value){
       Node p = find(after);

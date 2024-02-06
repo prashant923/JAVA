@@ -24,6 +24,9 @@ public class Main {
    list.insert(60000,2);
    list.insertbefore(344, 789);
 
+   list.deletefirst();
+   list.deletelast();
+
     list.display();
 
     }
