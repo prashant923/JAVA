@@ -33,13 +33,25 @@ public class Main {
 
 // circular linked list)))))))))))))))))))))))))))))))))))))))/
 
-    CLL list = new CLL();
-    list.insert(2);
-    list.insert(3);
-    list.insert(4);
-    list.insert(7);
-    list.insert(789);
+    // CLL list = new CLL();
+    // list.insert(2);
+    // list.insert(3);
+    // list.insert(4);
+    // list.insert(7);
+    // list.insert(789);
+    // list.display();
+
+    ll list = new ll();
+    list.insertFirst(0);
+    list.insertFirst(1);
+    list.insertFirst(2);
+    list.insertFirst(3);
+    list.insertFirst(4);
+    list.insertFirst(5);
     list.display();
+    list.insertRec(345, 2);
+    list.display();
+
 
 
     }
