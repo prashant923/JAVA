@@ -26,7 +26,7 @@ public class ll{
       size++;
       return temp;
     }
-    node.next= insertRec(value, index--, node.next);
+    node.next= insertRec(value, index-1, node.next);
     return node;
   }
   public void insertLast(int value){
@@ -125,6 +125,26 @@ public class ll{
       this.next = next;
     }
     
+  }
+  public void duplicates(){
+    if (head == null || head.next == null) {
+      return;
+  }
+    Node node = head;
+    while(node.next!= null&& node!= null){
+      if(node.value==node.next.value){
+        node.next = node.next.next;
+        size--;
+      }
+      else{
+        node = node.next;
+      }
+  Node temp = head;
+    while (temp.next != null) {
+        temp = temp.next;
+    }
+    tail = temp;
+    }
   }
    
 }

@@ -42,17 +42,18 @@ public class Main {
     // list.display();
 
     ll list = new ll();
-    list.insertFirst(0);
-    list.insertFirst(1);
-    list.insertFirst(2);
-    list.insertFirst(3);
-    list.insertFirst(4);
-    list.insertFirst(5);
+    list.insertLast(1);
+    list.insertLast(1);
+    list.insertLast(2);
+    list.insertLast(2);
+    list.insertLast(3);
+    list.insertLast(3);
+    list.insertLast(3);
+    list.insertLast(3);
     list.display();
-    list.insertRec(345, 2);
+    // list.insertRec(345, 2);
+    // list.display();
+    list.duplicates();
     list.display();
-
-
-
     }
 }
