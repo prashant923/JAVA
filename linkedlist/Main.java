@@ -55,5 +55,22 @@ public class Main {
     // list.display();
     list.duplicates();
     list.display();
+
+    ll first = new ll();
+    first.insertLast(1);
+    
+    first.insertLast(2);
+  
+    first.insertLast(3);
+    first.insertLast(3);
+    ll second = new ll();
+    second.insertFirst(0);
+ 
+    second.insertLast(14);
+    ll ans = ll.mergeSorted(first, second);
+    ans.display();
+    
+    
+
     }
 }

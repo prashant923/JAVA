@@ -146,5 +146,32 @@ public class ll{
     tail = temp;
     }
   }
-   
+
+  public  static ll mergeSorted(ll first, ll second){
+    if (first == null || second == null)
+    return null; 
+    Node f= first.head;
+    Node s= second.head;
+    
+     ll answer = new ll();
+     while(f!=null && s!=null){
+     if(f.value<s.value){
+       answer.insertLast(f.value);
+       f = f.next;
+     }
+     else {
+      answer.insertLast(s.value);
+      s = s.next;
+     }
+     while(f!=null){
+      answer.insertLast(f.value);
+      f = f.next;
+     }
+     while(s!=null){
+      answer.insertLast(s.value);
+      s = s.next;
+     }
+     }
+    return answer;
+    }
 }
