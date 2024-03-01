@@ -187,4 +187,23 @@ public class ll{
        }
        return false;
     }
+    public static int lengthCycle(Node head){
+      Node fast = head;
+      Node slow = head;
+
+       while(fast!=null && slow!=null){
+          fast = fast.next.next;
+          slow = slow.next;
+          if(fast == slow){
+            Node temp = slow;
+            int length = 0;
+            do{
+              temp = temp.next;
+              length++;
+            }while(temp!=slow);
+            return length;
+          }
+       }
+       return 0;
+    }
 }

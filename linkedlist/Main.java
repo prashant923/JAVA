@@ -69,7 +69,8 @@ public class Main {
     second.insertLast(14);
     ll ans = ll.mergeSorted(first, second);
     ans.display();
-    
+
+    ans.lengthCycle(ans);
     
 
     }
