@@ -46,6 +46,17 @@ public class InterviewQuestions {
         }
         return 0; // No cycle found
     }
+    public ListNode middleNode(ListNode head) {
+        ListNode f = head;
+        ListNode s = head;
+
+        while(f!=null && f.next!=null){
+            s = s.next;
+            f = f.next.next;
+        }
+        return s;
+        
+    }
   
     public ListNode detectCycle(ListNode head) {
         ListNode fast = head;
