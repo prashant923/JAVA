@@ -206,4 +206,16 @@ public class ll{
        }
        return 0;
     }
+    public void reversell(Node node){
+      if(node==tail){
+        head= tail;
+        return;
+      }
+
+      reversell(node.next);
+
+      tail.next= node;
+      tail = node;
+      tail.next = null;
+    }
 }
