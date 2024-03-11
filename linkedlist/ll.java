@@ -218,4 +218,23 @@ public class ll{
       tail = node;
       tail.next = null;
     }
+    public void reversellit(Node node){
+      if(size<2){
+        return;
+      }
+      Node prev = null;
+      Node pres = head;
+      Node next = pres.next;
+
+      while(pres != null){
+        pres.next = prev;
+        prev = pres;
+        pres = next;
+        if(next != null)
+        {
+         next = next.next;
+
+      }
+      head = prev;
+    }
 }
